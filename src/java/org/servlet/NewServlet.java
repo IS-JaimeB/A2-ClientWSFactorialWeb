@@ -22,7 +22,7 @@ import wsfactorial.WSFactorial_Service;
 @WebServlet(name = "NewServlet", urlPatterns = {"/NewServlet"})
 public class NewServlet extends HttpServlet {
 
-    @WebServiceRef(wsdlLocation = "WEB-INF/wsdl/ws.docencia.ces.siani.es/a03/WSFactorialWeb/WSFactorial.wsdl")
+    @WebServiceRef(wsdlLocation = "http://ws.docencia.ces.siani.es/a03/WSFactorialWeb/WSFactorial?wsdl")
     private WSFactorial_Service service;
 
     /**
